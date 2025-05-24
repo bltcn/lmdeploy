@@ -1224,7 +1224,7 @@ def serve(model_path: str,
                 )
             applications.get_swagger_ui_html = swagger_monkey_patch
             app.mount(path=f'/assets',  # web resource path
-                app=StaticFiles(directory=f'{docs_assets_path}'),  # 网页资源目录的路径
+                app=StaticFiles(directory=f'{docs_assets_path}'),
                 name='assets')
 
     app.include_router(router)
