@@ -1215,7 +1215,6 @@ def serve(model_path: str,
         if docs_assets_path:
             # define static file path
             def swagger_monkey_patch(*args, **kwargs):
-                logger.info("测试")
                 return get_swagger_ui_html(
                     *args,
                     **kwargs,
